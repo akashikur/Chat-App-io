@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.form-username {
+  display: block; /* this needs to be block */
+  background-color: rgb(70, 68, 68);
+  width: max-content;
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 37%;
+  border-radius: 5px;
+}
+h1 {
+  color: white;
+  font-size: 40px;
+}
+.form-username p {
+  font-size: x-large;
+}
+.form-username input {
+  width: 100%;
+  height: 20px;
+  border: none;
+  background-color: rgb(70, 68, 68);
+  outline: none;
+  font-size: large;
+  text-align: center;
+  color: white;
+}
+.form-username input:focus {
+  border-bottom: white 1px solid;
+}
+.form-username button {
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color: rgb(70, 68, 68);
+  border: none;
+  font-size: medium;
+  border-radius: 10px;
+}
+.form-username button:hover {
+  background-color: rgb(128, 123, 123);
+}
+
+.chatroom-container {
+  display: none; /* this needs to be none */
+  height: 100vh;
+  width: 100%;
+}
+
+.chatroom-header {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  height: 85vh;
+  background-color: #e1e1e1;
+  overflow-y: auto;
+}
+
+.message {
+  background-color: #075e54;
+  width: fit-content;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #128c7e !important;
+}
+.sent-btn {
+  border: none;
+  background-color: #ffffff;
+}
+.sent-btn:hover {
+  color: blue;
+}
+.sent-btn span {
+  font-size: 42px;
+}
+.message-input {
+  width: 95%;
+  height: 28px;
+  border: none;
+  font-size: large;
+  padding: 15px;
+  outline: none;
+}
+.mes-con {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 500px) {
+  .form-username {
+    margin: 0;
+    width: 80%;
+    left: 0;
+    top: 25%;
+  }
+  body {
+    background-color: rgb(70, 68, 68);
+  }
+}
